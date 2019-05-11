@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Hello World, Meet Shehu</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/103/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <script src="js/loaders/GLTFLoader.js"></script>
+
+  <script src="js/WebGL.js"></script>
+  <script src="js/libs/stats.min.js"></script>
+  <script src="js/libs/dat.gui.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link href="/css/stylish-portfolio.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">Check Me Out!</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#page-top">Home Page</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#about">About Me</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#services">Resume</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#contact">Contact Me</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container banner-text my-auto">
+      <h1 class="mb-1"><span class="bold">Shehu</span><br> Olatunji Muhammad</h1>
+      <br>
+      <h3 class="mb-5">
+        <em class="type"></em>
+      </h3>
+      <a class="btn btn-secondary btn-xl js-scroll-trigger banner-btn" id="banner-btn" href="#about">Come on in</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+  <!-- About -->
+  <section class="content-section" id="about">
+    <div class="container text-center">
+      <div class="row about">
+        <div id="3js-globe" class="globe"></div>
+        <div class="about-text">
+          <h2>Hello World!</h2>
+          <p class="lead mb-5">I've always loved the phrase Hello World! 
+            It's a powerful phrase that not only signifies the beginning of your programming journey, it also sets you up on the world stage for discovery.
+            <br>
+            <br>
+            So Welcome to my little corner of the world.
+          </p>
+          <!-- <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="content-section bg-primary text-white text-center" id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">Competencies</h3>
+        <h2 class="mb-5">What Can I Do?</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-screen-desktop"></i>
+          </span>
+          <h4>
+            <strong>FullStack Developer</strong>
+          </h4>
+          <p class="text-faded mb-0">I develop for web. I work with React, Redux, Node, Docker, MongoDB, MySQL and some love. This site is build on React!</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-notebook"></i>
+          </span>
+          <h4>
+            <strong>Electronics Engineer</strong>
+          </h4>
+          <p class="text-faded mb-0">Master's in Electrical Electronics Engineering from the University of Glasgow. So rest assured that I can build you a battle robot from legos</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-emotsmile"></i>
+          </span>
+          <h4>
+            <strong>Graphics Designer</strong>
+          </h4>
+          <p 
+            class="text-faded mb-0">I draw shapes and make things look pretty. Click on the icon to check out my previous work.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-like"></i>
+          </span>
+          <h4>
+            <strong>Utility Player</strong>
+          </h4>
+          <p class="text-faded mb-0">I work well with others and can navigate the dynamics of the toughest teams. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Callout -->
+  <section class="callout">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">Download My Resume!</h2>
+      <a class="btn btn-primary btn-xl" href="https://s3-us-west-1.amazonaws.com/shehu.dev/Shehu+CV_Graphical_General.pdf">Download Here</a>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="content-section" id="portfolio">
+    <div class="container">
+      <div id="3js-porfolio"></div>
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">Portfolio</h3>
+        <h2 class="mb-5">What Projects have I Done?</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="https://github-fetcher-shehu.herokuapp.com/">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>GitHub Repo Fetcher</h2>
+                <p class="mb-0">A web app that fetches GitHub Repos and sort's them by most Forks</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="/img/github.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="http://ec2-52-53-129-95.us-west-1.compute.amazonaws.com:6969/">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>GoblinHood</h2>
+                <p class="mb-0">A direct clone of the Robinhood website using Service Oriented Architecture!</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="/img/robinhood.jpg" alt="" style="object-fit:contain">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Sprise</h2>
+                <p class="mb-0">A website to surprise loved ones!</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="/img/portfolio-3.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>SDC</h2>
+                <p class="mb-0">Coming Soon.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="/img/portfolio-4.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <!-- <section class="content-section bg-primary text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+      <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
+      <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
+    </div>
+  </section> -->
+
+  <!-- Robot -->
+  <section id="robot-container" >
+      <div class="container text-center">
+        <div class="content-section-heading">
+          <h3 class="text-secondary mb-0">Contact Me</h3>
+          <h2 class="mb-5">Let's Talk</h2>
+        </div>
+        <div id="robot">
+          <h3 class="text-secondary mb-0">The Robot is still under construction :) </h3>
+
+        </div>
+      </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://join.skype.com/invite/yuQClURThAPf" target="blank">
+            <i class="icon-social-skype"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/muhammad-shehu-b991a010b/" target="blank">
+            <i class="icon-social-linkedin"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://github.com/M-Shehu" target="blank">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Muhammad Shehu 2019</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+  <script src="js/spinning-globe.min.js"></script>
+  <script src="js/portfolio.min.js"></script>
+
+
+</body>
+
+</html>
