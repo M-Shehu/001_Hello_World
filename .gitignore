@@ -1,2 +1,3 @@
 node_modules
-vendor/fontawesome-free
+public/vendor
+*.env.yml
