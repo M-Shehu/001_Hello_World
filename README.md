@@ -4,7 +4,7 @@ Weclome to my portfolio website.
 
 ## Preview
 
-[![Shehu's Website](https://s3-us-west-1.amazonaws.com/shehu.dev/Screenshot+at+May+11+16-47-48.png)](https://shehu.dev)
+[![Shehu's Website](https://s3-us-west-1.amazonaws.com/shehu.dev/Readme_Screenshot.png)](https://shehu.dev)
 
 
 **[View Live Preview](https://shehu.dev)**
