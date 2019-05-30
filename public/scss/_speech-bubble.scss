@@ -1,0 +1,60 @@
+
+.example-obtuse {
+  position:relative;
+  width: 100%;
+  padding:15px 30px;
+  margin:0;
+  font-size: 20px;
+  @include body-font;
+  color:#fff;
+  background:rgb(230, 157, 48); /* default background for browsers without gradient support */
+  /* css3 */
+  // background:-webkit-gradient(linear, 0 0, 0 100%, from(#f9d835), to(#f3961c));
+  // background:-moz-linear-gradient(#f9d835, #f3961c);
+  // background:-o-linear-gradient(#f9d835, #f3961c);
+  // background:linear-gradient(#f9d835, #f3961c);
+  /* Using longhand to avoid inconsistencies between Safari 4 and Chrome 4 */
+  -webkit-border-top-left-radius:25px 50px;
+  -webkit-border-top-right-radius:25px 50px;
+  -webkit-border-bottom-right-radius:25px 50px;
+  -webkit-border-bottom-left-radius:25px 50px;
+  -moz-border-radius:25px / 50px;
+  border-radius:25px / 50px;
+}
+
+/* display of quote author (alternatively use a class on the element following the blockquote) */
+.example-obtuse + p {
+  margin:10px 150px 2em 0; 
+  text-align:right; 
+  font-style:italic;
+  color: rgb(77, 77, 77);
+  font-size: 12px;
+}
+
+/* creates the larger triangle */
+.example-obtuse:before {
+  content:"";
+  position:absolute;
+  bottom:-30px;
+  right:80px;
+  border-width:0 0 30px 50px;
+  border-style:solid;
+  border-color:transparent rgb(230, 157, 48);
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+}
+
+/* creates the smaller triangle */
+.example-obtuse:after {
+  content:"";
+  position:absolute;
+  bottom:-30px;
+  right:110px;
+  border-width:0 0 30px 20px;
+  border-style:solid;
+  border-color:transparent #fff;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
+}
