@@ -8,3 +8,17 @@ Weclome to my portfolio website.
 
 
 **[View Live Preview](https://shehu.dev)**
+
+
+
+## Tech Stack
+
+FrontEnd: React, Webpack
+Serverless functions: AWS Lambda
+
+Dependency Management: npm
+
+
+## License
+
+This app is MIT licensed.
